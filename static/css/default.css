@@ -23,6 +23,8 @@
     src: url("/static/fonts/Monoton/Monoton-Regular.ttf") format("opentype");
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -34,14 +36,16 @@ body {
     align-items: center;
     justify-content: center;
 
-    font-family: Kufi !important;
+    /* font-family: Kufi !important; */
+    /* font-family: Arial, Helvetica, sans-serif !important; */
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
     overflow-x: hidden;
     overflow-y: overlay;
     font-size: 16px;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 * {
