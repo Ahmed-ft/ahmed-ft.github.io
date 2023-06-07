@@ -73,6 +73,23 @@ section {
     background-size: 100% auto; 
 }
 
+.s2 {
+    background-image: url('/static/gallery/sec2.jpeg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding: 60px 0;
+}
+
+.s7 {
+    background-image: url('/static/gallery/footer-bg.jpeg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
 footer {
     background-color: black;
     width: 100%;
