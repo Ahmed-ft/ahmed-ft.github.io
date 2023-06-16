@@ -67,7 +67,11 @@ section {
 }
 
 .s2 {
+    width: 90%;
+}
 
+.s2 span {
+    font-size: 20px;
 }
 
 .s3 {
