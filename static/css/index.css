@@ -70,26 +70,32 @@ section {
 
 }
 
+.s3 {
+    width: 100%;
+}
+
 .s3 .grid-container {
     height: 80%;
     width: 80%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 1px;
+    grid-column-gap: 15px;
     grid-row-gap: 1px;
 }
 
 .s3 .grid-item {
-    background-color: #ff00001e;
-    height: 100%;
+    /* background-color: #ff00001e; */
+    height: 80%;
+    border: solid 1px #183a1d5c;
+    border-radius: 4px;
+}
+
+.s3 .grid-item span {
+    width: 100%;
 }
 
 .s7 {
-    background-image: url('/static/gallery/footer-bg.jpeg');
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: center;
     width: 100%;
 }
 
