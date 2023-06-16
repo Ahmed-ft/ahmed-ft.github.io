@@ -32,49 +32,8 @@
 
     <link rel="stylesheet" href="/static/css/default.css">
     <link rel="stylesheet" href="/static/css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <style>
-        .fa {
-          padding: 3px;
-          font-size: 15px;
-          width: 20px;
-          text-align: center;
-          text-decoration: none;
-          border-radius: 3px;
-        }
-        
-        .fa:hover {
-            opacity: 0.7;
-        }
-        
-        .fa-facebook {
-          background: #3B5998;
-          color: white;
-        }
-        
-        .fa-twitter {
-          background: #55ACEE;
-          color: white;
-        }
-        
-        .fa-google {
-          background: #dd4b39;
-          color: white;
-        }
-        
-        .fa-linkedin {
-          background: #007bb5;
-          color: white;
-        }
-        
-        .fa-skype {
-          background: #00aff0;
-          color: white;
-        }
-        
-        </style>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
 </head>
 
 <body>
@@ -105,12 +64,9 @@
         <div class="content">
 
             <section class="s1">
-                <div>
-                    <img  src="/static/gallery/index/oil_rig.jpg" alt="">
-                </div>
+                <!-- add text over image + green overlay using pixlr -->
+                <img src="/static/gallery/index/oil_rig.jpg" alt="">
             </section>
-
-            <!-- <div class="line"></div> -->
 
             <!-- ABOUT US -->
             <section class="s2" style="height: auto;">
@@ -195,7 +151,47 @@
             <!-- <div class="line"></div> -->
 
             <!-- SERVICES -->
-            <section class="bblue"></section>
+            <section class="bblue s3">
+
+                <span style="margin-bottom: 20px; font-size: 35px; font-weight: 600; color: #222222;">OUR SERVICES</span>
+
+                <span style="margin-bottom: 20px; width: 30%; border-bottom: solid 1px #22222236;"></span>
+
+                <div class="grid-container">
+                    
+                    <div class="grid-item flex-c-c">
+                        <div style="width: 50%; height: 100%;" class="flex-c-c"><i class="fa-solid fa-wrench" style="font-size: 100px;"></i></div>
+                        <div style="width: 50%; height: 100%; background-color: green;">right</div>
+                    </div>
+
+                    <div class="grid-item flex-c-c">
+                        <div style="width: 50%; height: 100%;" class="flex-c-c"><i class="fa-solid fa-utensils" style="font-size: 100px;"></i></div>
+                        <div style="width: 50%; height: 100%; background-color: green;">right</div>
+                    </div>
+                    
+                    <div class="grid-item flex-c-c">
+                        <div style="width: 50%; height: 100%;" class="flex-c-c"><i class="fa-solid fa-pen-ruler" style="font-size: 100px;"></i></div>
+                        <div style="width: 50%; height: 100%; background-color: green;">right</div>
+                    </div>
+
+                    <div class="grid-item flex-c-c">
+                        <div style="width: 50%; height: 100%;" class="flex-c-c"><i class="fa-solid fa-person-digging" style="font-size: 100px;"></i></div>
+                        <div style="width: 50%; height: 100%; background-color: green;">right</div>
+                    </div>
+
+                    <div class="grid-item flex-c-c">
+                        <div style="width: 50%; height: 100%;" class="flex-c-c"><i class="fa-solid fa-paint-roller" style="font-size: 100px;"></i></div>
+                        <div style="width: 50%; height: 100%; background-color: green;">right</div>
+                    </div>
+                    
+                    <div class="grid-item flex-c-c">
+                        <div style="width: 50%; height: 100%;" class="flex-c-c"><i class="fa-solid fa-helmet-safety" style="font-size: 100px;"></i></div>
+                        <div style="width: 50%; height: 100%; background-color: green;">right</div>
+                    </div>
+
+                </div>
+
+            </section>
 
             <!-- <div class="line"></div> -->
 
@@ -329,12 +325,28 @@
 
                     <div style="border-bottom: solid 1px #ffffff49; width: 70%;"></div>
 
-                    <div class="flex-c-se w100" style="margin-top: 15px;">
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-twitter"></a>
-                        <a href="#" class="fa fa-google"></a>
-                        <a href="#" class="fa fa-linkedin"></a>
-                        <a href="#" class="fa fa-skype"></a>
+                    <div class="flex-c-se w100 footer-links" style="margin-top: 15px;">
+
+                        <a href="#" style="color: #3B5998;">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+                        
+                        <a href="#" style="color: #55ACEE;">
+                            <i class="fa-brands fa-square-twitter"></i>
+                        </a>
+
+                        <a href="#" style="color: #dd4b39;">
+                            <i class="fa-brands fa-square-google-plus"></i>
+                        </a>
+
+                        <a href="#" style="color: #007bb5;">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                        <a href="#" style="color: #00aff0;">
+                            <i class="fa-brands fa-skype"></i>
+                        </a>
+
                     </div>
 
                 </div>
