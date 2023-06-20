@@ -27,20 +27,49 @@
   <link rel="stylesheet" href="assets/css/glightbox.min.css" />
 
   <link rel="stylesheet" href="style.css" />
+
 </head>
 
 <body>
+
+  <style>
+
+    .info-board {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      height: 100vh;
+      background-color: gray;
+      color: white;
+      padding: 15px;
+      overflow-x: hidden;
+      overflow-y: auto;
+
+      display: none;
+    }
+
+  </style>
 
   <!--====== NAVBAR NINE PART START ======-->
 
   <section class="navbar-area navbar-nine">
     <div class="container">
+
+      <div class="info-board">
+      </div>
+
       <div class="row">
         <div class="col-lg-12">
           <nav class="navbar navbar-expand-lg">
 
             <a class="navbar-brand" href="index.html" style="padding: 0 30px; border-radius: 5px; background-color: #ffffffd8; width: auto; display: flex; align-items: center; justify-content: flex-start;">
-              <img style="width: 90px; height: 80px;" src="assets/images/logo.png" alt="Logo" />
+              <!-- <img style="width: 90px; height: 80px;" src="assets/images/logo.png" alt="Logo" /> -->
+              <img style="width: 17%; height: auto; margin-right: 10px;" src="assets/images/logo.png" alt="Logo" />
               <span style="color: black; font-size: small; font-weight: 600;">BADERALDEEN OIL SERVICES</span>
             </a>
 
@@ -79,7 +108,7 @@
             
             </div>
 
-            <div class="navbar-btn d-none d-lg-inline-block">
+            <div class="navbar-btn d-none d-lg-inline-block" style="display: none !important;">
               <a class="menu-bar" href="#side-menu-left"><i style="color: black;" class="lni lni-menu"></i></a>
             </div>
           </nav>
@@ -146,14 +175,12 @@
       <div class="row align-items-center">
         <div class="col-lg-6 col-md-12 col-12">
           <div class="header-content">
-            <h1>Baderaldeen Oil Services.</h1>
-            <p>
-              We are a digital agency that helps brands to achieve their
-              business outcomes. We see technology as a tool to create amazing
-              things.
+            <h1>Baderaldeen Oil Services</h1>
+            <p style="font-size: 30px;">
+              Excellence. Quality. Trust.
             </p>
             <div class="button">
-              <a href="javascript:void(0)" class="btn primary-btn">Contact Us</a>
+              <a href="#contact" class="page-scroll btn primary-btn">Contact Us</a>
               <!-- <a href="https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM"
                 class="glightbox video-button">
                 <span class="btn icon-btn rounded-full">
@@ -279,7 +306,7 @@
                   <button class="nav-link" id="nav-vision-tab" data-bs-toggle="tab" data-bs-target="#nav-vision"
                     type="button" role="tab" aria-controls="nav-vision" aria-selected="false">our Vision</button>
                   <button class="nav-link" id="nav-history-tab" data-bs-toggle="tab" data-bs-target="#nav-history"
-                    type="button" role="tab" aria-controls="nav-history" aria-selected="false">our History</button>
+                    type="button" role="tab" aria-controls="nav-history" aria-selected="false">our Mission</button>
                 </div>
               </nav>
               <div class="tab-content" id="nav-tabContent">
@@ -422,6 +449,20 @@
             </div>
           </div>
         </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-services">
+            <div class="service-icon">
+              <i class="lni lni-road"></i>
+            </div>
+            <div class="service-content">
+              <h4>Transporting Services</h4>
+              <p>
+                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
+                eirmod tempor ividunt labor dolore magna.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -467,8 +508,8 @@
             <h2>Download Company Profile And Policies</h2>
 
             <div class="light-rounded-buttons">
-              <a href="javascript:void(0)" class="btn primary-btn-outline">Profile</a>
-              <a href="javascript:void(0)" class="btn primary-btn-outline">Policies</a>
+              <a id="getProfile" href="" class="btn primary-btn-outline">Profile</a>
+              <a id="getHse" href="" class="btn primary-btn-outline">HSE Manual</a>
             </div>
             
           </div>
@@ -544,7 +585,7 @@
                   </div>
                   <div class="contact-content">
                     <h4>Contact</h4>
-                    <p>+218 92 588 31 40</p>
+                    <p>+218 91 376 42 03</p>
                     <p>info@baderaldeen.org</p>
                   </div>
                 </div>
@@ -657,23 +698,23 @@
               <div class="footer-widget f-about">
                 <div class="logo">
                   <a href="index.html">
-                    <img src="assets/images/logo.svg" alt="#" class="img-fluid" />
+                    <img src="assets/images/logo.png" alt="#" style="width: 90px; height: 80px;" class="img-fluid" />
+                    <span style="color: #0000009f; font-weight: bold;">BADERALDEEN OIL SERVICES</span>
                   </a>
                 </div>
-                <p>
+                <!-- <p>
                   Making the world a better place through constructing elegant
                   hierarchies.
-                </p>
+                </p> -->
                 <p class="copyright-text">
-                  <span>© 2024 Ayro UI.</span>Designed and Developed by
-                  <a href="javascript:void(0)" rel="nofollow"> Ayro UI </a>
+                  <span>© 2023 Baderaldeen Oil Services, All rights reserved.</span>
                 </p>
               </div>
               <!-- End Single Widget -->
             </div>
             <div class="col-lg-2 col-md-6 col-12">
               <!-- Single Widget -->
-              <div class="footer-widget f-link">
+              <div class="footer-widget f-link" style="display: none;">
                 <h5>Solutions</h5>
                 <ul>
                   <li><a href="javascript:void(0)">Marketing</a></li>
@@ -687,12 +728,12 @@
             <div class="col-lg-2 col-md-6 col-12">
               <!-- Single Widget -->
               <div class="footer-widget f-link">
-                <h5>Support</h5>
+                <h5>Social Links</h5>
                 <ul>
-                  <li><a href="javascript:void(0)">Pricing</a></li>
-                  <li><a href="javascript:void(0)">Documentation</a></li>
-                  <li><a href="javascript:void(0)">Guides</a></li>
-                  <li><a href="javascript:void(0)">API Status</a></li>
+                  <li><a target="_blank" href="https://www.facebook.com/people/%D8%B4%D8%B1%D9%83%D8%A9-%D8%A8%D8%AF%D8%B1%D8%A7%D9%84%D8%AF%D9%8A%D9%86-%D9%84%D9%84%D9%86%D9%82%D9%84-%D8%A7%D9%84%D8%AB%D9%82%D9%8A%D9%84-%D9%88%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D9%81%D8%B7%D9%8A%D8%A9-%D9%88-%D8%AA%D8%AC%D9%87%D9%8A%D8%B2-%D8%A7%D9%84%D9%85%D9%86%D8%B4%D8%A2%D8%AA/100063555881962/"><i class="lni lni-facebook-original" style="margin-right: 10px;"></i>FACEBOOK</a></li>
+                  <li><a href="javascript:void(0)"><i class="lni lni-twitter-original" style="margin-right: 10px;"></i>TWITTER</a></li>
+                  <li><a href="javascript:void(0)"><i class="lni lni-linkedin-original" style="margin-right: 10px;"></i>LINKEDIN</a></li>
+                  <li><a href="javascript:void(0)"><i class="lni lni-instagram-original" style="margin-right: 10px;"></i>INSTAGRAM</a></li>
                 </ul>
               </div>
               <!-- End Single Widget -->
@@ -736,6 +777,8 @@
   <script src="assets/js/glightbox.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/tiny-slider.js"></script>
+  <script src="assets/js/jquery-1.11.3.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
 
   <script>
     //===== close navbar-collapse when a  clicked
@@ -777,6 +820,9 @@
     //   'autoplayVideos': true,
     // });
   </script>
+
+
+
 </body>
 
 </html>
