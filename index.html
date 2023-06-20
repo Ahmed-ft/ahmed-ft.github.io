@@ -35,6 +35,8 @@
   <style>
 
     .info-board {
+      border-right: solid 3px black;
+      border-left: solid 3px black;
       position: absolute;
       top: 0;
       left: 0;
@@ -44,13 +46,39 @@
       margin-right: auto;
       width: 80%;
       height: 100vh;
-      background-color: gray;
-      color: white;
+      background-color: white;
+      color: black;
+      font-weight: bold;
       padding: 15px;
       overflow-x: hidden;
       overflow-y: auto;
-
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
       display: none;
+    }
+    .info-board h2 {
+      margin: 30px 0;
+      color: var(--main-color);
+      border: solid 1px var(--main-color);
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .info-board ul {
+      font-size: large;
+      margin-top: 20px;
+      width: 80%;
+    }
+
+    .info-board a {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      border: solid 1px black;
+      border-radius: 5px;
+      font-size: 30px;
+      padding: 0 10px;
     }
 
   </style>
@@ -60,7 +88,123 @@
   <section class="navbar-area navbar-nine">
     <div class="container">
 
-      <div class="info-board">
+      <div class="info-board maintenance-s">
+
+        <a href="" style="color: black;" class="exit">X</a>
+
+        <h2>MAINTENANCE SERVICES</h2>
+
+        <ul style="list-style-type: disc;">
+          <li>Maintenance/Repair and Revamping works for Oil & Gas Field facilities such as Stationary and Rotating equipments, Separators, Desalination plant, Boilers, Skimmers, Dehydrators, Scrubbers, Gas Boots and Production Tanks, etc. and assorted equipments.</li>
+          <li>Repair / Maintenance of underground cross country pipeline up to 42 inch in diameter.</li>
+          <li>Maintenance of crude oil storage tanks and various product storage and utility tanks. Activities include repair and replacement of tank appurtenances, bottom plate and roof plate, supply of foam dam seal plate and weather shield for floating roof tanks, etc.</li>
+          <li>Maintenance / repair of oil / gas pipelines up to 42'' inside diameter.</li>
+          <li>Cleaning inspection of pipelines up to 42'' inside.</li>
+        </ul>  
+
+      </div>
+
+      <div class="info-board construction-s">
+
+        <a href="" style="color: black;" class="exit">X</a>
+
+        <h2>CONSTRUCTION SERVICES</h2>
+
+        <ul style="list-style-type: disc;">
+          <li>Construction, Testing and commissioning for Oil & Gas Field facilities including pipelines, trunk lines, process piping and facilities.</li>
+          <li>Oil and Gas Processing plant.</li>
+          <li>Crude oil and products storage tanks up to 500,000 barrels in capacity.</li>
+          <li>Construction and refurbishment of accommodation blocks suitable to desert conditions according to BS, ASTM, and ACI standards.</li>
+        </ul>  
+
+      </div>
+
+      <div class="info-board procurement-s">
+
+        <a href="" style="color: black;" class="exit">X</a>
+
+        <h2>PROCUREMENT SERVICES</h2>
+
+        <ul style="list-style-type: disc;">
+          <li>Piping & fitting in different material & grade.</li>
+          <li>Gasket & sealing check.</li>
+          <li>Valves (Ball, Gate, etc.).</li>
+          <li>Insulations.</li>
+        </ul>  
+
+      </div>
+  
+      <div class="info-board design-s">
+
+        <a href="" style="color: black;" class="exit">X</a>
+
+        <h2>DESIGN SERVICES</h2>
+
+        <ul style="list-style-type: disc;">
+          <li>Pipe and Instrument diagram, Flow diagram.
+          </li>
+          <li>Piping layout.
+          </li>
+          <li>Electrical cables connection & distribution.
+          </li>
+          <li>Material List.
+          </li>
+          <li>Project schedule and cost.
+          </li>
+        </ul>  
+
+      </div>
+      <div class="info-board manpower-s">
+
+        <a href="" style="color: black;" class="exit">X</a>
+
+        <h2>DESIGN AND ENGINEERING SERVICES</h2>
+
+        <span>We can provide the client with Manpower Supply to cover the operation end users. Our Manpower is well selected around the world and supplied according to job description requirement with high standards complying with the Oil and Gas industries level.</span>
+
+      </div>
+   
+      <div class="info-board catering-s">
+
+        <a href="" style="color: black;" class="exit">X</a>
+
+        <h2>CATERING SERVICES</h2>
+
+        <ul style="list-style-type: disc;">
+          <li>Purchase of all food and cleaning material.
+          </li>
+          <li>Deliveries of food items and cleaning items to the camp by refrigerated trucks.</li>
+          <li>Preparation of 3 meals per day (Breakfast, Lunch and Dinner)</li>
+          <li>Cleaning Kitchens and Dining Rooms after every service.
+          </li>
+          <li>Keep stores freezers and chillers clean at all time.
+          </li>
+          <li>Provide laundry services as follow:
+          </li>
+          <li>Wash and press personal and working clothese twice per week.
+          </li>
+          <li>Wash bed sheets, pillow cases and towels twice per week.
+          </li>
+          <li>Provide house keeping services as follows:
+          </li>
+          <li>Clean beadroms and make beds once per day
+          </li>
+          <li>Change and wash sheets pillow cases and towels twice per week or at every change of resident
+          </li>
+          <li>Clean accomodation once per day
+          </li>
+          <li>Provision of one soap bar and small box of soap powder every week
+          </li>
+          <li>Clean blocks three times per day
+          </li>
+          <li>Collection of light garbage around the builing daily.
+          </li>
+          <li>Recurit catering personnel, pay wages, leave salaries, visas, food etc.
+          </li>
+          <li>Provision of professional catering uniforms.
+          </li>
+        </ul>  
+
       </div>
 
       <div class="row">
@@ -365,7 +509,7 @@
     <!--======  End Section Title Five ======-->
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 service-board-trigger" id="maintenance-s">
           <div class="single-services">
             <div class="service-icon">
               <i class="lni lni-construction-hammer"></i>
@@ -373,13 +517,12 @@
             <div class="service-content">
               <h4>Maintenance Services</h4>
               <p>
-                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
-                eirmod tempor ividunt labor dolore magna.
+                Maintenance/Repair and Revamping works for Oil & Gas Field facilities such as Stationary and Rotating equipments, Separators... <span style="font-weight: bold;">CLICK FOR MORE</span>
               </p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 service-board-trigger" id="construction-s">
           <div class="single-services">
             <div class="service-icon">
               <i class="lni lni-construction"></i>
@@ -387,13 +530,12 @@
             <div class="service-content">
               <h4>Construction Services</h4>
               <p>
-                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
-                eirmod tempor ividunt labor dolore magna.
+                Construction, Testing and commissioning for Oil & Gas Field facilities including pipelines, trunk lines, process piping... <span style="font-weight: bold;">CLICK FOR MORE</span>
               </p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 service-board-trigger" id="procurement-s">
           <div class="single-services">
             <div class="service-icon">
               <i class="lni lni-paint-roller"></i>
@@ -401,13 +543,12 @@
             <div class="service-content">
               <h4>Material Procurement</h4>
               <p>
-                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
-                eirmod tempor ividunt labor dolore magna.
+                We are in position to provide & supply with different material such us: Piping & fitting in different material & grade... <span style="font-weight: bold;">CLICK FOR MORE</span>
               </p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 service-board-trigger" id="design-s">
           <div class="single-services">
             <div class="service-icon">
               <i class="lni lni-ruler-pencil"></i>
@@ -415,13 +556,12 @@
             <div class="service-content">
               <h4>Design And Engineering</h4>
               <p>
-                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
-                eirmod tempor ividunt labor dolore magna.
+                We can prepare the following document such us: Pipe and Instrument diagram, Flow diagram. Electrical cables connection... <span style="font-weight: bold;">CLICK FOR MORE</span>
               </p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 service-board-trigger" id="manpower-s">
           <div class="single-services">
             <div class="service-icon">
               <i class="lni lni-helmet"></i>
@@ -429,27 +569,25 @@
             <div class="service-content">
               <h4>Manpower Supply</h4>
               <p>
-                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
-                eirmod tempor ividunt labor dolore magna.
+                We can provide the client with Manpower Supply to cover the operation end users. Our Manpower is well selected... <span style="font-weight: bold;">CLICK FOR MORE</span>
               </p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 service-board-trigger" id="catering-s">
           <div class="single-services">
             <div class="service-icon">
-              <i class="lni lni-pencil-alt"></i>
+              <i class="lni lni lni-dinner"></i>
             </div>
             <div class="service-content">
-              <h4>Engineering Services</h4>
+              <h4>Catering Services</h4>
               <p>
-                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
-                eirmod tempor ividunt labor dolore magna.
+                Our wide range of Catering (Food and Housekeeping) Services include: Purchase of all food and cleaning material...<span style="font-weight: bold;">CLICK FOR MORE</span>
               </p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <a class="col-lg-4 col-md-6" id="transport-s">
           <div class="single-services">
             <div class="service-icon">
               <i class="lni lni-road"></i>
@@ -457,12 +595,11 @@
             <div class="service-content">
               <h4>Transporting Services</h4>
               <p>
-                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
-                eirmod tempor ividunt labor dolore magna.
+                We can provide transportation of light and heavy machinarey...  <span style="font-weight: bold;">CLICK FOR MORE</span>
               </p>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </section>
